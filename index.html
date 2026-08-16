@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick 10 Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-card" id="quizCard">
+    <div id="quizContent">
+      <div class="header-bar">
+        <span class="badge" id="questionCounter">Question 1 / 10</span>
+        <span class="badge score-badge" id="scoreDisplay">Score: 0</span>
+      </div>
 
+      <div class="question-text" id="questionText">Loading...</div>
+      <div class="options-grid" id="optionsContainer"></div>
+      <div class="banner banner-danger" id="errorBanner">Incorrect! Returning to Question 1...</div>
+    </div>
+
+    <div class="win-screen" id="winScreen">
+      <h2>🎉 Congratulations!</h2>
+      <p>You completed all 10 questions without a mistake.</p>
+      <p style="margin-top: 8px; font-size: 1.2rem;" id="finalScore"></p>
+      <button class="restart-btn" onclick="startNewGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
